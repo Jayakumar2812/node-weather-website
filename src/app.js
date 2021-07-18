@@ -21,14 +21,14 @@ app.get("",(req,res)=>{
     })
 })
 app.get("/about",(req,res)=>{
-    res.render("About",{
+    res.render("about",{
         title:"About me",
         name:"jayakumar",
         pg:"2"
     })
 })
 app.get("/help",(req,res)=>{
-    res.render("Help",{
+    res.render("help",{
         message:"help me!,JK",
         title:"HELP",
         name:"jayakumar",

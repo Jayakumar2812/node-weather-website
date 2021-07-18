@@ -9,7 +9,7 @@ const weather =(lat,long,callback) =>{
         callback("unable to find location",undefined)
     }
     else{
-        callback(undefined," : "+body.current.weather_descriptions+". The temperature is "+body.current.temperature +" But it feels like "+body.current.feelslike+". Chances of raining is "+body.current.precip+". Humdity: "+body.current.humidity+". Cloud coverage:"+body.current.cloudcover+"%. Wind speed is "+body.current.wind_speed+" Km/hr.")
+        callback(undefined," : "+body.current.weather_descriptions+". The temperature is "+body.current.temperature +" But it feels like "+body.current.feelslike+". Chances of raining is "+body.current.precip+". Humdity: "+body.current.humidity+"%. Cloud coverage:"+body.current.cloudcover+"%. Wind speed is "+body.current.wind_speed+" Km/hr.")
         }
 })
 }

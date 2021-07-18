@@ -15,7 +15,7 @@ publicdirpath = path.join(__dirname, '../public')
 app.use(express.static(publicdirpath))
 app.get("",(req,res)=>{
     res.render("index",{
-        title:"what is happening?",
+        title:"Weather forecast for tonight: DARK ",
         name:"jayakumar",
         pg:"1"
     })

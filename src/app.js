@@ -5,6 +5,7 @@ const geocode = require("./utils/geocode.js")
 const weather = require("./utils/weather.js")
 const { title } = require("process")
 const app = express()
+const port =process.env.PORT || 3000
 const viewspath = path.join(__dirname,"../templates/views")
 const partialspath = path.join(__dirname,"../templates/partials")
 app.set("view engine","hbs")
@@ -81,6 +82,6 @@ app.get("*",(req,res)=>{
         name:"jayakumar"
     })
 })
-app.listen(3000,()=>{
-    console.log("server is up and running on port 3000")
+app.listen(port,()=>{
+    console.log("server is up and running on port "+port)
 })
